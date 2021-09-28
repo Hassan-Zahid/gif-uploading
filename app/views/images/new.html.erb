@@ -1,0 +1,16 @@
+<br/>
+<br/>
+<br/>
+abc
+<%= form_for @image do |i|%>
+  <p>
+    <label>Image Title</label>
+    <%= i.text_field :title%>
+    <Br/>
+
+    <label>Upload Image</label>
+    <%= i.file_field :gif, accept: 'image/gif' %>
+    <Br/>
+  </p>
+  <%= i.submit %>
+<% end %>
